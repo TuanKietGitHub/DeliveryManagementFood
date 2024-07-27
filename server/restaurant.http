@@ -1,0 +1,111 @@
+POST    http://localhost:5000/api/auth/restaurant/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDc4MTI0MCwiZXhwIjoxNzIwOTU0MDQwfQ.PuP68kBE0Lq6g3cd7yWYmPSzQ1tHW5RIgzn3DKAng1U
+
+{
+	"title": "TEXAS CHICKEN" ,
+    "imageURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "foods": [
+      {
+        "dishName": "chicken KFC",
+        "dishPic":
+          "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+        "price": "5"
+      }
+    ],
+    "time": "8am to 8pm",
+    "pickup": false,
+    "delivery": true,
+    "isOpen": true,
+    "logoURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "rating": 5,
+    "ratingCount": "5",
+    "code": "1234",
+    "coords": {
+      "id": "44444",
+      "latitude": "1234",
+      "latitudeDelta": "1234",
+      "longitude": "1234",
+      "longitudeDelta": "1234",
+      "address": "Da Nang City"
+    }
+}
+
+###
+POST    http://localhost:5000/api/auth/restaurant/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDc4MTI0MCwiZXhwIjoxNzIwOTU0MDQwfQ.PuP68kBE0Lq6g3cd7yWYmPSzQ1tHW5RIgzn3DKAng1U
+
+{
+	"title": "KFC" ,
+    "imageURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "foods": [
+      {
+        "dishName": "chicken KFC",
+        "dishPic":
+          "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+        "price": "5"
+      }
+    ],
+    "time": "8am to 8pm",
+    "pickup": false,
+    "delivery": true,
+    "isOpen": true,
+    "logoURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "rating": 5,
+    "ratingCount": "5",
+    "code": "1234",
+    "coords": {
+      "id": "88888",
+      "latitude": "1234",
+      "latitudeDelta": "1234",
+      "longitude": "1234",
+      "longitudeDelta": "1234",
+      "address": "saigon hcm"
+    }
+}
+
+
+###
+GET http://localhost:5000/api/auth/restaurant/getAll
+Content-Type: application/json
+
+
+###
+GET http://localhost:5000/api/auth/restaurant/get/669141cdad82bda1e9d4ccb3
+Content-Type: application/json 
+
+###
+DELETE  http://localhost:5000/api/auth/restaurant/delete/66914564c0529710e34585c3
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDc4MTI0MCwiZXhwIjoxNzIwOTU0MDQwfQ.PuP68kBE0Lq6g3cd7yWYmPSzQ1tHW5RIgzn3DKAng1U
+
+###
+PUT    http://localhost:5000/api/auth/restaurant/update/66914c24f3bf91f246add7d9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDc4MTI0MCwiZXhwIjoxNzIwOTU0MDQwfQ.PuP68kBE0Lq6g3cd7yWYmPSzQ1tHW5RIgzn3DKAng1U
+
+{
+    "title": "KFC CHICKEN" ,
+    "imageURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "foods": [
+      {
+        "dishName": "chicken KFC",
+        "dishPic":
+          "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+        "price": "5"
+      }
+    ],
+    "time": "11am to 11pm",
+    "pickup": false,
+    "delivery": false,
+    "isOpen": false,
+    "logoURL":
+      "https://www.zilliondesigns.com/blog/wp-content/uploads/Dominos-Pizza-logo-2.jpg",
+    "rating": 1
+}

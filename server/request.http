@@ -1,0 +1,104 @@
+###
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json 
+
+{
+    "username" : "tuankiet" ,
+    "email" : "tuankiet@gmail.com" ,
+    "password" : "12345",
+    "address" : "Duong so 1, Binh Hung Hoa B, Quan Binh Tan" ,
+    "phone" : "032198756" ,
+    "answer" : "Market"
+}
+
+
+###
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json 
+
+{
+    "username" : "phuongha" ,
+    "email" : "phuongha@gmail.com" ,
+    "password" : "phuongha",
+    "address" : "DA NANG CITY" ,
+    "phone" : "0321987566" ,
+    "answer" : "CicleK"
+}
+
+###
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json 
+
+{
+    "username" : "admin" ,
+    "email" : "admin@gmail.com" ,
+    "password" : "admin",
+    "address" : "DA NANG CITY" ,
+    "phone" : "03219245636" ,
+    "answer" : "BACH HOA XANH"
+}
+
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "phuongha@gmail.com" ,
+    "password" : "phuongha"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "tuankiet@gmail.com" ,
+    "password" : "tuankiet"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com" ,
+    "password" : "admin"
+}
+
+###
+GET   http://localhost:5000/api/auth/getUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZTE4NzA1M2IyNDliM2M1NDdkOSIsImlhdCI6MTcyMDc3NjA4MywiZXhwIjoxNzIwOTQ4ODgzfQ.d3fhZhLfU6Y8zlkvDHYPTVWFfK80LXJDbpbbIqt5j84
+
+###
+PUT   http://localhost:5000/api/auth/updateUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZTE4NzA1M2IyNDliM2M1NDdkOSIsImlhdCI6MTcyMDQ1MDYwNywiZXhwIjoxNzIwNjIzNDA3fQ.sEeXvuGF4icr18tCAdmWEcC9-lLuU6qjb6Ycm2XA2pE
+
+{
+    "username" : "admin" ,
+    "address" : "HCM CITY" ,
+    "phone" : "0325612345" ,
+    "profile": ""
+}
+
+
+###
+POST   http://localhost:5000/api/auth/resetPassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZDU1NWZjN2I3MDhmMTY4MjBlYyIsImlhdCI6MTcyMDQ1MTA4MSwiZXhwIjoxNzIwNjIzODgxfQ.NuWAY1npmxfolP9LONYu8Ehr3GkDye_cJeefvy69pAU
+
+{
+    "password" : "tuankiet1" ,
+    "NewPassword" : "tuankiet"
+}
+
+###
+DELETE    http://localhost:5000/api/auth/deleteUser/6690fe2138c74a441ad22425
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTBmZTIxMzhjNzRhNDQxYWQyMjQyNSIsImlhdCI6MTcyMDc3ODI4MiwiZXhwIjoxNzIwOTUxMDgyfQ.sv8cUqBQ7tx-UUCSU6F8acxq263uKVy8U4Z5ZJaG8Zk
+
+
+###
+GET  http://localhost:5000/api/auth/list

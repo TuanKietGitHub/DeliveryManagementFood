@@ -1,0 +1,48 @@
+POST  http://localhost:5000/api/auth/category/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDk2MjM2MywiZXhwIjoxNzIxMTM1MTYzfQ.IpTUAnPryRen3dHYIcv_4GWqbmEjjnPm8O9P_K4M9Ls
+
+{
+    "title" : "Fast Food"
+}
+
+###
+POST  http://localhost:5000/api/auth/category/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDk2MjM2MywiZXhwIjoxNzIxMTM1MTYzfQ.IpTUAnPryRen3dHYIcv_4GWqbmEjjnPm8O9P_K4M9Ls
+
+{
+    "title" : "Pizza Food" ,
+    "imageURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Ffast-food-logo.html&psig=AOvVaw0MIUsHsAMR7PFl9H7Q6IzC&ust=1720936455062000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjY_4Gqo4cDFQAAAAAdAAAAABAK"
+}
+
+
+###
+GET  http://localhost:5000/api/auth/category/getAll
+Content-Type: application/json
+
+
+###
+DELETE  http://localhost:5000/api/auth/category/delete/66921f173f18ef5478080b84
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMDk2MjM2MywiZXhwIjoxNzIxMTM1MTYzfQ.IpTUAnPryRen3dHYIcv_4GWqbmEjjnPm8O9P_K4M9Ls
+
+
+###
+PUT  http://localhost:5000/api/auth/category/update/6693cedd19fa414fb60d274b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+{
+    "title" : "Food" ,
+    "imageURL" : "Google.com"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com" ,
+    "password" : "admin"
+}

@@ -1,0 +1,100 @@
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com" ,
+    "password" : "admin"
+}
+
+###
+POST  http://localhost:5000/api/auth/food/order
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZDU1NWZjN2I3MDhmMTY4MjBlYyIsImlhdCI6MTcyMTEyODM2MywiZXhwIjoxNzIxMzAxMTYzfQ.aX__HKjvo3cgc0xihBkBm00VizQH2aLb0OTQKc0uJW4
+
+{
+    "cart" :
+        {
+            "_id": "6695391b80ea1bdf2b9b3a33",
+            "title": "Beef Noodle Best",
+            "description": "dhajdsj kfdjsfs",
+            "price": 45000
+        } ,
+    "countOrder" : 2
+}
+
+###
+POST  http://localhost:5000/api/auth/food/order
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTEwNjM0MiwiZXhwIjoxNzIxMjc5MTQyfQ.mcMbu3vzZHwGzK78klCEBY5PNroCPSjMEA73Yn2j8Vs
+
+{
+    "cart" :
+        {
+            "_id": "6695391b80ea1bdf2b9b3a33",
+            "title": "Beef Noodle Best",
+            "description": "dhajdsj kfdjsfs",
+            "price": 150000
+        } ,
+    "countOrder" : 5
+}
+
+
+###
+POST  http://localhost:5000/api/auth/food/order
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTEwNjM0MiwiZXhwIjoxNzIxMjc5MTQyfQ.mcMbu3vzZHwGzK78klCEBY5PNroCPSjMEA73Yn2j8Vs
+
+{
+    "cart" :
+        {
+            "_id": "66953aa980ea1bdf2b9b3a36",
+            "title": "ChicKen",
+            "description": "dhajdsj kfdjsfs kfsdjf",
+            "price": 20000 ,
+            "status" : "prepare"
+        } ,
+    "countOrder" : 10
+}
+
+###
+POST  http://localhost:5000/api/auth/food/order
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTIzMjc0NywiZXhwIjoxNzIxNDA1NTQ3fQ.clBU-rsiTwS7EK28vZsIo9R7VMrVQSatq37nsIPDuac
+
+{
+    "cart" :
+        {
+            "_id": "6695391b80ea1bdf2b9b3a33",
+            "title": "Beef Noodle Best",
+            "description": "dhajdsj kfdjsfs",
+            "price": 10000 ,
+            "status" : "preparing"
+        } ,
+    "countOrder" : 5
+}
+
+###
+GET  http://localhost:5000/api/auth/food/order/getAll
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTIzMjc0NywiZXhwIjoxNzIxNDA1NTQ3fQ.clBU-rsiTwS7EK28vZsIo9R7VMrVQSatq37nsIPDuac
+
+###
+DELETE   http://localhost:5000/api/auth/food/order/delete/6697dde59ba3542760b36c61
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZGQxNzA1M2IyNDliM2M1NDdkNCIsImlhdCI6MTcyMTIyODIyOSwiZXhwIjoxNzIxNDAxMDI5fQ.h3D8ILGbLKUQlPWAvKHwRwrc41v85BdAQQ9KKa01QVc
+
+
+### admin
+POST   http://localhost:5000/api/auth/food/order/status/669655896e3363677f594221
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTIzMjc0NywiZXhwIjoxNzIxNDA1NTQ3fQ.clBU-rsiTwS7EK28vZsIo9R7VMrVQSatq37nsIPDuac
+
+{
+    "status": "prepare"
+}
+
+###
+POST   http://localhost:5000/api/auth/food/order/status/669655896e3363677f594221
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGJmZGQxNzA1M2IyNDliM2M1NDdkNCIsImlhdCI6MTcyMTIyODIyOSwiZXhwIjoxNzIxNDAxMDI5fQ.h3D8ILGbLKUQlPWAvKHwRwrc41v85BdAQQ9KKa01QVc

@@ -1,0 +1,75 @@
+POST  http://localhost:5000/api/auth/food/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+{
+    "title" : "Chicken Soop" ,
+    "description" : "dhajdsj kfdjsfs kfsdjf",
+    "price" : 12000,
+    "imageURL" : "https://media.istockphoto.com/id/1349383878/vi/anh/pizza-hawaii-v%E1%BB%9Bi-gi%C4%83m-b%C3%B4ng-v%C3%A0-d%E1%BB%A9a.jpg?s=612x612&w=0&k=20&c=Iz5oIhdJYY88OUISrUIas6wLTyvi83za5_GsN2L0C4w=",
+    "foodTags" : "chicken",
+    "category" : "Main",
+    "code" : "1234",
+    "isAvailabe" : false ,
+    "restaurant" : "66921d1f99a3c381b5ee4dab",
+    "rating" : 4
+}
+
+###
+POST  http://localhost:5000/api/auth/food/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+{
+    "title" : "Beef Noodle" ,
+    "description" : "dhajdsj kfdjsfs kfsdjf",
+    "price" : 40000,
+    "foodTags" : "Beef",
+    "isAvailabe" : true ,
+    "restaurant" : "6691455ec0529710e34585c1",
+    "rating" : 5
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com" ,
+    "password" : "admin"
+}
+
+
+###
+GET   http://localhost:5000/api/auth/food/getAll
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+###
+GET   http://localhost:5000/api/auth/food/getFood/669538b580ea1bdf2b9b3a2f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+###
+GET   http://localhost:5000/api/auth/food/getRestaurant/66921d1f99a3c381b5ee4dab
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
+
+
+###
+PUT  http://localhost:5000/api/auth/food/update/6695391b80ea1bdf2b9b3a33
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTEwMTM5NSwiZXhwIjoxNzIxMjc0MTk1fQ.LArxO_1HbsSKPTzfyDO2LOCW-HqUZ1PjPvyOAS3qz-U
+
+{
+    "title" : "Beef Noodle Best" ,
+    "description" : "dhajdsj kfdjsfs",
+    "price" : 150000,
+    "restaurant" : "6691455ec0529710e34585c1",
+    "rating" : 5
+}
+
+###
+DELETE  http://localhost:5000/api/auth/food/delete/669538b580ea1bdf2b9b3a2f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTEwMDY3ODAyYTZiZmE4MWEyZTQ4NSIsImlhdCI6MTcyMTA1MDU0NiwiZXhwIjoxNzIxMjIzMzQ2fQ.56E-7-DWwyou03i-dj2Pv2wPYOmyb_XlrFvS7NMFiFE
